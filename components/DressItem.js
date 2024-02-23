@@ -7,7 +7,8 @@ const DressItem = ({item}) => {
       <Pressable 
             style={{
                 backgroundColor: "#F8F8F8",
-                borderRadius:8, padding:10,
+                borderRadius:8, 
+                padding:10,
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "space-between",
@@ -21,8 +22,8 @@ const DressItem = ({item}) => {
             />
         </View>
         <View> 
-            <Text>{item.name}</Text>
-            <Text>Rs.{item.price}</Text>
+            <Text style={{width:83, fontSize:17, fontWeight:"500", marginBottom:7}}>{item.name}</Text>
+            <Text style={{width: 60, color: "gray", fontSize:15}}>Rs.{item.price}</Text>
         </View>
         <Pressable style={{width:80}}>
             <Text 
@@ -33,7 +34,9 @@ const DressItem = ({item}) => {
                     marginVertical: 10,
                     color:"#088F8F",
                     textAlign: "center",
-                    padding:5
+                    padding:5,
+                    fontSize: 17,
+                    fontWeight: "bold"
                 }}
             >
                 Add
